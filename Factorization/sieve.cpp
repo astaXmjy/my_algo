@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace  std;
-#define N 10
+#define N 100000
 #define int long long
+
 
 void primesSieve(vector<int> &sieve){
   sieve[1]=sieve[0]=0;
@@ -10,13 +11,10 @@ void primesSieve(vector<int> &sieve){
     if (p==1) {
       for ( int j=i*i;j <=N;j=j+i) {
         sieve[j]=0;
-
       }
      }
-
   }
 }
-
 
 int32_t main () {
    vector<int> sieve(N,1);

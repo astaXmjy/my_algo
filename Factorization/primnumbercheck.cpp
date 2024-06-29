@@ -14,4 +14,4 @@ bool check_is_prime(int n){
 int main (int argc, char *argv[]) {
     cout<<check_is_prime(7)<<endl;
   return 0;
-}   
+}
