@@ -27,9 +27,9 @@ deeksha_time_traveller = deeksha_solution(
 
 print(deeksha_time_traveller)
 
-def greeting(msg):
-    print(f'le tera msg {msg}')
+# def greeting(msg):
+#     print(f'le tera msg {msg}')
 
-greeting("you are amazing lol😀")
+# greeting("you are amazing lol😀")
 
-                         
+
