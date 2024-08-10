@@ -1,0 +1,29 @@
+[
+    {
+        "label": "deeksha_solution",
+        "kind": 2,
+        "importPath": "prob",
+        "description": "prob",
+        "peekOfCode": "def deeksha_solution(arr):\n    import math\n    max_ele = 0\n    for i in range(len(arr)):\n        max_ele = max(max_ele, arr[i])\n        arr[i] = math.gcd(max_ele, arr[i])\n    arr.sort()\n    groups = []\n    for i in range(len(arr) // 2):\n        groups.append([arr[i], arr[len(arr) - 1 - i]])",
+        "detail": "prob",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "prob",
+        "description": "prob",
+        "peekOfCode": "arr = [1, 14, 11, 19]\ndeeksha_time_traveller = deeksha_solution(\n    arr\n)  # idon't pass n instead of these i use len function kido 😁\nprint(deeksha_time_traveller)\n# def greeting(msg):\n#     print(f'le tera msg {msg}')\n# greeting(\"you are amazing lol😀\")",
+        "detail": "prob",
+        "documentation": {}
+    },
+    {
+        "label": "deeksha_time_traveller",
+        "kind": 5,
+        "importPath": "prob",
+        "description": "prob",
+        "peekOfCode": "deeksha_time_traveller = deeksha_solution(\n    arr\n)  # idon't pass n instead of these i use len function kido 😁\nprint(deeksha_time_traveller)\n# def greeting(msg):\n#     print(f'le tera msg {msg}')\n# greeting(\"you are amazing lol😀\")",
+        "detail": "prob",
+        "documentation": {}
+    }
+]
