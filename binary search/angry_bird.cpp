@@ -20,7 +20,7 @@ bool canPlaceBirds(int B, int N, vector<int> nests, int sep)
             }
         }
     }
-
+    
     return false;
 }
 
