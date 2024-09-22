@@ -4,6 +4,8 @@ using namespace std;
 int power(int a,int b){
     int ans=1;
 
+    int count = 0;
+
     while (b)
     {
         if(b&1){
@@ -13,8 +15,9 @@ int power(int a,int b){
            a*=a;
 
         b=b>>1;
+        count++;
     }
-
+    cout << count << endl;
     return ans;
 }
 

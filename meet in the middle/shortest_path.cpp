@@ -52,7 +52,7 @@ int shortest_path(string start, string finish, int n)
 
 int main(int argc, char const *argv[])
 {
-    string p1 = "123", p2 = "213";
+    string p1 = "213", p2 = "321";
     int n = p1.length();
 
     cout << shortest_path(p1, p2, n);
