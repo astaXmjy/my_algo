@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
         tree.add(i, v[i]);
     }
 
-    cout << tree.sum(3, 5) << endl;
+    cout << tree.sum(4, 5) << endl;
 
     return 0;
 }
