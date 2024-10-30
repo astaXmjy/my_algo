@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 #define F first
@@ -8,10 +8,6 @@ using namespace std;
 const int N = 1e5;
 
 int a[N][3], dp[N][3];
-
-
-
-
 
 int main(int argc, char const *argv[])
 {
@@ -24,7 +20,6 @@ int main(int argc, char const *argv[])
         {
             cin >> a[i][j];
         }
-
     }
 
     dp[0][0] = a[0][0];
@@ -37,13 +32,12 @@ int main(int argc, char const *argv[])
         {
             for (int jj = 0; jj < 3; jj++)
             {
-                if(j!=jj){
+                if (j != jj)
+                {
                     dp[i][j] = max(dp[i][j], dp[i - 1][jj] + a[i][j]);
                 }
             }
-            
         }
-        
     }
 
     cout << *max_element(dp[n - 1], dp[n - 1] + 3);

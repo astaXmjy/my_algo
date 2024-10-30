@@ -2,28 +2,28 @@
     {
         "label": "Node",
         "kind": 6,
-        "importPath": "deeksha.ll",
-        "description": "deeksha.ll",
+        "importPath": "ll",
+        "description": "ll",
         "peekOfCode": "class Node:\n    def __init__(self, Data):\n        self.Data = Data\n        self.next = None\nclass LL:\n    def __init__(self):\n        self.head = None\n    def begin(self, Data):\n        Dee = Node(Data)\n        if self.head is None:",
-        "detail": "deeksha.ll",
+        "detail": "ll",
         "documentation": {}
     },
     {
         "label": "LL",
         "kind": 6,
-        "importPath": "deeksha.ll",
-        "description": "deeksha.ll",
+        "importPath": "ll",
+        "description": "ll",
         "peekOfCode": "class LL:\n    def __init__(self):\n        self.head = None\n    def begin(self, Data):\n        Dee = Node(Data)\n        if self.head is None:\n            self.head = Dee\n        else:\n            Dee.next = self.head\n            self.head = Dee",
-        "detail": "deeksha.ll",
+        "detail": "ll",
         "documentation": {}
     },
     {
         "label": "ll",
         "kind": 5,
-        "importPath": "deeksha.ll",
-        "description": "deeksha.ll",
-        "peekOfCode": "ll = LL()\nll.begin(\"H\")\nll.begin(\"S\")\nll.begin(\"E\")\nll.begin(\"E\")\nll.begin(\"D\")\nll.end(\"A\")\nll.position(\"K\", 3)\nll.print_ll()\nprint(ll.head)",
-        "detail": "deeksha.ll",
+        "importPath": "ll",
+        "description": "ll",
+        "peekOfCode": "ll = LL()\nll.begin(\"H\")\nll.begin(\"S\")\nll.begin(\"E\")\nll.begin(\"E\")\nll.begin(\"D\")\nll.end(\"A\")\nll.position(\"K\", 3)\nll.print_ll()",
+        "detail": "ll",
         "documentation": {}
     }
 ]
