@@ -1,5 +1,41 @@
 [
     {
+        "label": "maxProfit",
+        "kind": 2,
+        "importPath": "blind75.Array.best_time_to_buy_sell",
+        "description": "blind75.Array.best_time_to_buy_sell",
+        "peekOfCode": "def maxProfit(prices):\n    min_price=float('inf')\n    max_profit=0\n    for price in prices:\n        if price<min_price:\n            min_price=price\n        elif price-min_price>max_profit:\n            max_profit=price-min_price\n    return max_profit\nprint(maxProfit([7,1,5,3,6,4]))",
+        "detail": "blind75.Array.best_time_to_buy_sell",
+        "documentation": {}
+    },
+    {
+        "label": "containsDuplicate",
+        "kind": 2,
+        "importPath": "blind75.Array.duplicate",
+        "description": "blind75.Array.duplicate",
+        "peekOfCode": "def containsDuplicate(nums):\n    hashmap={}\n    for i in nums:\n        if i in hashmap:\n            return True\n        hashmap[i]=1\n    return False\nprint(containsDuplicate([1,2,3,1]))",
+        "detail": "blind75.Array.duplicate",
+        "documentation": {}
+    },
+    {
+        "label": "productExceptSelf",
+        "kind": 2,
+        "importPath": "blind75.Array.Product_of_array_except_self",
+        "description": "blind75.Array.Product_of_array_except_self",
+        "peekOfCode": "def productExceptSelf(nums):\n    n = len(nums)\n    left=[1]*n\n    right=[1]*n\n    for i in range(1,n):\n        left[i]=left[i-1]*nums[i-1]\n    for i in range(n-2,-1,-1):\n        right[i]=right[i+1]*nums[i+1]\n    return [left[i]*right[i] for i in range(n)]\nprint(productExceptSelf([1,2,3,4])) # [24,12,8,6]",
+        "detail": "blind75.Array.Product_of_array_except_self",
+        "documentation": {}
+    },
+    {
+        "label": "twoSum",
+        "kind": 2,
+        "importPath": "blind75.Array.two_sum",
+        "description": "blind75.Array.two_sum",
+        "peekOfCode": "def twoSum(nums,target):\n    seen={}\n    for i in range(len(nums)):\n        if target-nums[i] in seen:\n            return [seen[target-nums[i]],i]\n        seen[nums[i]]=i\n    return []\nprint(twoSum([2,7,11,15],9))",
+        "detail": "blind75.Array.two_sum",
+        "documentation": {}
+    },
+    {
         "label": "Node",
         "kind": 6,
         "importPath": "deeksha.ll",

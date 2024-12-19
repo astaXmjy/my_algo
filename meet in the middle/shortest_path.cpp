@@ -21,7 +21,6 @@ int shortest_path(string start, string finish, int n)
     d[start] = d[finish] = 0;
 
 
-
     while (!q.empty())
     {
         cout << "in" << endl;
