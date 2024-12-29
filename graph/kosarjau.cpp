@@ -40,8 +40,8 @@ int main(int argc, char const *argv[])
     {
         int x, y;
         cin >> x >> y;
-        gr[x].push_back(y);
-        grr[y].push_back(x);
+        gr[x].push_back(y);// graph
+        grr[y].push_back(x); // reverse graph
     }
 
     for (int i = 1; i <= n; i++)
@@ -66,6 +66,6 @@ int main(int argc, char const *argv[])
         cout << i << " " << col[i] << '\n';
     }
 
-    cout << "Totally strong connected components are ----->" << comp << '\n';
+    cout << "Totally strong connected components are ----->" << comp-1 << '\n';
     return 0;
 }
